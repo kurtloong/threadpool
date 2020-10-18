@@ -1,0 +1,43 @@
+server:
+  port: 8787
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    encoding:
+      force: true
+      enabled: true
+      charset: UTF-8
+spring:
+  task:
+    execution:
+      pool:
+        # 最大线程数
+        max-size: 16
+        # 核心线程数
+        core-size: 16
+        # 存活时间
+        keep-alive: 10s
+        # 队列大小
+        queue-capacity: 100
+        # 是否允许核心线程超时
+        allow-core-thread-timeout: true
+      # 线程名称前缀
+      thread-name-prefix: async-task-
+  datasource:
+    url: jdbc:mysql://rm-bp19843jlad2ru8ei3o.mysql.rds.aliyuncs.com:3306/steam_bot?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CST
+    username: lolita
+    password: lolitajxsdRJ102
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    initialization-mode: always
+    continue-on-error: true
+    hikari:
+      minimum-idle: 5
+      connection-test-query: SELECT 1 FROM DUAL
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: SpringBootDemoHikariCP
+      max-lifetime: 20000
+      connection-timeout: 30000
+
