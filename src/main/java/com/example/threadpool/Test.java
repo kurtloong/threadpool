@@ -10,17 +10,7 @@ import java.util.concurrent.Executors;
 public class Test {
 
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService executorService = Executors.newCachedThreadPool();
-        while (true){
-            executorService.submit(()->{
-                log.info("submit:"+ LocalDateTime.now());
-                try {
-                    Thread.sleep(1000);
-                }catch (InterruptedException e){
-                    e.printStackTrace();
-                }
-            });
-        }
+
 
     }
 }

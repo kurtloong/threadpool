@@ -50,4 +50,17 @@ public class AsyncController {
     public void  asyncInvalid(){
         asyncService.asyncInvalid();
     }
+
+
+    @PostMapping("/asyncTransactDemo")
+    @ResponseBody
+    public void  asyncTransactDemo(){
+        asyncService.asyncTransactDemo();
+    }
+
+    @PostMapping("/asyncRefuseRun")
+    @ResponseBody
+    public void  asyncRefuseRun(){
+        asyncService.asyncRefuseRun();
+    }
 }

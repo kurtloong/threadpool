@@ -24,7 +24,7 @@ spring:
       # �߳�����ǰ׺
       thread-name-prefix: async-task-
   datasource:
-    url: jdbc:mysql://rm-bp19843jlad2ru8ei3o.mysql.rds.aliyuncs.com:3306/steam_bot?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CST
+    url: jdbc:mysql://rm-bp19843jlad2ru8ei3o.mysql.rds.aliyuncs.com:3306/lolita?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CST
     username: lolita
     password: lolitajxsdRJ102
     driver-class-name: com.mysql.cj.jdbc.Driver
