@@ -21,5 +21,22 @@ public class AsyncService {
         }
     }
 
+    public void  asyncInvalid() {
+        try {
+            log.info("service start");
+            asyncInvalidExample();
+            log.info("service end");
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+
+
+    @Async
+    public void  asyncInvalidExample() throws InterruptedException{
+        Thread.sleep(10);
+        log.info(Thread.currentThread().getName()+":处理完成");
+    }
+
 
 }

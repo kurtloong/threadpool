@@ -11,17 +11,17 @@ spring:
   task:
     execution:
       pool:
-        # ×î´óÏß³ÌÊý
+        # ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½
         max-size: 16
-        # ºËÐÄÏß³ÌÊý
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½
         core-size: 16
-        # ´æ»îÊ±¼ä
+        # ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         keep-alive: 10s
-        # ¶ÓÁÐ´óÐ¡
+        # ï¿½ï¿½ï¿½Ð´ï¿½Ð¡
         queue-capacity: 100
-        # ÊÇ·ñÔÊÐíºËÐÄÏß³Ì³¬Ê±
+        # ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì³ï¿½Ê±
         allow-core-thread-timeout: true
-      # Ïß³ÌÃû³ÆÇ°×º
+      # ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½Ç°×º
       thread-name-prefix: async-task-
   datasource:
     url: jdbc:mysql://rm-bp19843jlad2ru8ei3o.mysql.rds.aliyuncs.com:3306/steam_bot?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CST
