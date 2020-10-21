@@ -22,6 +22,8 @@ public class AsyncTask {
         Thread.sleep(10);
         log.info(Thread.currentThread().getName()+":处理完成");
     }
+
+
     @Transactional(rollbackFor = RuntimeException.class)
     @Async
     public void  asyncTransactDemo(){
@@ -40,6 +42,24 @@ public class AsyncTask {
 
     @Async
     public void  asyncRefuseRun() throws InterruptedException {
+        Thread.sleep(5000000);
+    }
+
+    @Async("test01")
+    public void  asyncRun01() throws InterruptedException {
+        Thread.sleep(10);
+        log.info(Thread.currentThread().getName()+":处理完成");
+    }
+
+    @Async("test02")
+    public void  asyncRun02() throws InterruptedException {
+        Thread.sleep(10);
+        log.info(Thread.currentThread().getName()+":处理完成");
+    }
+
+    @Async("discardPolicy")
+    public void asyncDiscardPolicy() throws InterruptedException {
+        log.info(" "+n.incrementAndGet());
         Thread.sleep(5000000);
     }
 

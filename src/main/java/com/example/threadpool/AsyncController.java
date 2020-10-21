@@ -63,4 +63,17 @@ public class AsyncController {
     public void  asyncRefuseRun(){
         asyncService.asyncRefuseRun();
     }
+
+    @PostMapping("/asyncRunTest")
+    @ResponseBody
+    public void  asyncRunTest(){
+        asyncService.asyncSimpleExample01();
+        asyncService.asyncSimpleExample02();
+    }
+
+    @PostMapping("/asyncDiscardPolicy")
+    @ResponseBody
+    public void asyncDiscardPolicy(){
+        asyncService.asyncDiscardPolicy();
+    }
 }
