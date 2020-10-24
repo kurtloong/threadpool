@@ -1,4 +1,4 @@
-package com.example.threadpool;
+package com.fantasi.threadpool;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

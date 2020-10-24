@@ -1,4 +1,4 @@
-package com.example.threadpool;
+package com.fantasi.threadpool;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;

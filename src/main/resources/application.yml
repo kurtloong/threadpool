@@ -23,6 +23,8 @@ spring:
         allow-core-thread-timeout: true
       # �߳�����ǰ׺
       thread-name-prefix: async-task-
+  application:
+    name: test
   datasource:
     url: jdbc:mysql://rm-bp19843jlad2ru8ei3o.mysql.rds.aliyuncs.com:3306/lolita?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CST
     username: lolita
@@ -40,4 +42,9 @@ spring:
       pool-name: SpringBootDemoHikariCP
       max-lifetime: 20000
       connection-timeout: 30000
-
+thead-pool:
+  host: 122.114.42.249
+  database: 13
+  port: 6406
+  password: xdnphb_2017
+  application-name: test

@@ -1,4 +1,4 @@
-package com.example.threadpool;
+package com.fantasi.threadpool;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;

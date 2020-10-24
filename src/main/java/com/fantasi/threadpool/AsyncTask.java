@@ -1,11 +1,11 @@
-package com.example.threadpool;
+package com.fantasi.threadpool;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import java.util.concurrent.RejectedExecutionHandler;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 
@@ -63,11 +63,11 @@ public class AsyncTask {
         Thread.sleep(5000000);
     }
 
-    /**
-     * 在这段注释中有两个非常重要的部分
-     * 1.使用@Async的方法只能返回Void 或者 Future类型
-     * 2.表明了@Async是通过org.springframework.core.task.TaskExecutor
-     * 或者java.util.concurrent.Executor来创建线程池
-     * 3.写了@Async的作用范围 在类上使用@Async会覆盖方法上的@Async
+    /*
+      在这段注释中有两个非常重要的部分
+      1.使用@Async的方法只能返回Void 或者 Future类型
+      2.表明了@Async是通过org.springframework.core.task.TaskExecutor
+      或者java.util.concurrent.Executor来创建线程池
+      3.写了@Async的作用范围 在类上使用@Async会覆盖方法上的@Async
      */
 }
